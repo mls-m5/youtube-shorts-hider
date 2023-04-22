@@ -1,8 +1,8 @@
 {
-  "manifest_version": 2,
-  "name": "My Custom Plugin",
+  "manifest_version": 3,
+  "name": "Youtube shorts hider",
   "version": "1.0",
-  "description": "A simple plugin that hides elements of a specific class",
+  "description": "Hide annoying youtube shorts",
   "icons": {
     "48": "icon.png"
   },
@@ -11,7 +11,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["https://www.youtube.com/*"],
       "js": ["contentScript.js"]
     }
   ],
